@@ -86,6 +86,7 @@ class PID(object):
 
 ##############################################################################
 ## Demo Code Below This Line!
+# 下面代码设置了 Target_Velocity 的值, 并定义了 main 函数
 ##############################################################################
         
 Target_Velocity = 5   # The value we're trying to limit ourselves to
@@ -125,5 +126,7 @@ def main():
 
         
 if __name__ == '__main__':
+    # 指的是加载到内存中的脚本的名称如果是 __main__, 则执行main()
+    # 如果不是, 表明这个pid.py文件是在被别的程序调用, 就不用执行main()了.
     main()
     print('--')
